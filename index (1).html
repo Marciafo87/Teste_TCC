@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NEXT LEVEL EXPERIENCE — Administração</title>
+  <meta name="description" content="NEXT LEVEL EXPERIENCE: uma experiência digital imersiva sobre o curso de Administração. Conhecimento, estratégia e inovação construindo o futuro.">
+  <meta name="theme-color" content="#08070D">
+  <meta property="og:title" content="NEXT LEVEL EXPERIENCE">
+  <meta property="og:description" content="Gestão é transformar ideias em resultados.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <!-- Fontes (opcional): sem internet, o site usa fontes do sistema automaticamente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Abertura -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <svg class="loader-mark" viewBox="0 0 48 48" fill="none" stroke="url(#lg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <defs><linearGradient id="lg" x1="0" y1="48" x2="48" y2="0"><stop stop-color="#762BFF"/><stop offset="1" stop-color="#C084FC"/></linearGradient></defs>
+        <path d="M10 38l14-10 14 10"/><path d="M10 28l14-10 14 10"/><path d="M10 18L24 8l14 10"/>
+      </svg>
+      <div class="loader-word">NEXT LEVEL</div>
+      <div class="loader-bar"><i></i></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a class="brand" href="#inicio" aria-label="NEXT LEVEL EXPERIENCE — início">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+          <defs><linearGradient id="bg1" x1="0" y1="48" x2="48" y2="0"><stop stop-color="#762BFF"/><stop offset="1" stop-color="#C084FC"/></linearGradient></defs>
+          <rect x="1.5" y="1.5" width="45" height="45" rx="13" stroke="rgba(192,132,252,.35)" stroke-width="1.5"/>
+          <path d="M13 34l11-8 11 8" stroke="rgba(255,255,255,.35)"/><path d="M13 26l11-8 11 8" stroke="rgba(255,255,255,.65)"/><path d="M13 18l11-8 11 8" stroke="url(#bg1)"/>
+        </svg>
+        <span class="brand-text"><span data-site="name">NEXT LEVEL EXPERIENCE</span><small>ADMINISTRAÇÃO</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio" data-nav="inicio">Início</a></li>
+          <li><a href="#formacao" data-nav="formacao">Formação</a></li>
+          <li><a href="#jornada" data-nav="jornada">Aprendizado</a></li>
+          <li><a href="#pratica" data-nav="pratica">Prática</a></li>
+          <li><a href="#projetos" data-nav="projetos">Projetos</a></li>
+          <li><a href="#palestras" data-nav="palestras">Palestras</a></li>
+          <li><a href="#experiencias" data-nav="experiencias">Experiências</a></li>
+          <li><a href="#mercado" data-nav="mercado">Mercado</a></li>
+          <li><a href="#inscricao" data-nav="inscricao">Inscrição</a></li>
+          <li><a href="#formulario" data-nav="formulario">Formulário</a></li>
+          <li><a href="#sobre" data-nav="sobre">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="live-btn" id="live-btn" type="button" title="Apresentação ao vivo (tecla P)">
+          <span class="live-dot"></span><span class="live-label">AO VIVO</span><span class="sr-only">Ativar modo apresentação</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- 1. HERO -->
+    <section class="hero" id="inicio" data-present-title="Início">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-orb o1"></div><div class="hero-orb o2"></div><div class="hero-orb o3"></div>
+      <svg class="hero-rings" viewBox="0 0 1000 1000" fill="none" aria-hidden="true">
+        <g class="r1"><circle cx="500" cy="500" r="300" stroke="rgba(157,77,255,.35)" stroke-dasharray="2 10"/><circle cx="800" cy="500" r="5" fill="#C084FC"/></g>
+        <g class="r2"><circle cx="500" cy="500" r="390" stroke="rgba(192,132,252,.18)"/><path d="M500 110a390 390 0 01276 114" stroke="#9D4DFF" stroke-width="2"/><circle cx="224" cy="776" r="4" fill="#9D4DFF"/></g>
+        <g class="r3"><circle cx="500" cy="500" r="480" stroke="rgba(157,77,255,.12)" stroke-dasharray="1 16"/><circle cx="20" cy="500" r="3" fill="#C084FC" fill-opacity=".6"/></g>
+      </svg>
+      <div class="hero-content">
+        <span class="hero-kicker hero-fade"><span class="live-dot"></span><span data-text="heroKicker"></span></span>
+        <div class="hero-name hero-fade" data-site="name">NEXT LEVEL EXPERIENCE</div>
+        <h1 class="hero-title" id="hero-title"></h1>
+        <p class="hero-sub hero-fade" data-text="heroSubtitle"></p>
+        <div class="hero-ctas hero-fade">
+          <a class="btn btn-primary" href="#simulador" id="cta-explore"><span data-text="ctaPrimary"></span></a>
+          <a class="btn btn-ghost" href="#formacao"><span data-text="ctaSecondary"></span></a>
+        </div>
+        <div class="hero-stats hero-fade" id="hero-stats"></div>
+        <p class="hero-slogan hero-fade" data-site="slogan"></p>
+      </div>
+      <a class="scroll-cue" href="#formacao" aria-label="Rolar para explorar"><span class="mouse"></span>Explore</a>
+    </section>
+
+    <!-- 2. NOSSA FORMAÇÃO -->
+    <section class="section" id="formacao" data-present-title="Nossa formação">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 · Nossa formação</span>
+          <h2 class="h2" data-text="formacaoTitle"></h2>
+          <p class="lead" data-text="formacaoLead"></p>
+          <p class="note" id="formacao-note"></p>
+        </div>
+        <div class="areas-grid" id="areas-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3. JORNADA -->
+    <section class="section" id="jornada" data-present-title="O que aprendemos">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 · O que aprendemos</span>
+          <h2 class="h2" data-text="jornadaTitle"></h2>
+          <p class="lead" data-text="jornadaLead"></p>
+        </div>
+        <div class="journey" id="journey"></div>
+      </div>
+    </section>
+
+    <!-- 4. GESTÃO NA PRÁTICA -->
+    <section class="section" id="pratica" data-present-title="Gestão na prática">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 · Gestão na prática</span>
+          <h2 class="h2" data-text="praticaTitle"></h2>
+          <p class="lead" data-text="praticaLead"></p>
+        </div>
+        <div class="practice reveal">
+          <div class="practice-tabs" role="tablist" aria-label="Situações de gestão" id="practice-tabs"></div>
+          <div class="practice-panel glass" role="tabpanel" id="practice-panel" aria-live="polite"></div>
+        </div>
+        <div class="lab glass reveal" id="lab">
+          <div>
+            <span class="badge">Mini-laboratório</span>
+            <h3 style="margin-top:12px">Ponto de equilíbrio em 10 segundos</h3>
+            <p>Quanto uma empresa precisa vender para não ter prejuízo? Ajuste os valores e veja a gestão financeira funcionando.</p>
+            <div class="lab-fields">
+              <div class="field"><label for="lab-fixed">Custos fixos/mês (R$)</label><input id="lab-fixed" type="number" min="0" step="100" value="6000" inputmode="decimal"></div>
+              <div class="field"><label for="lab-price">Preço de venda (R$)</label><input id="lab-price" type="number" min="0" step="0.5" value="12" inputmode="decimal"></div>
+              <div class="field"><label for="lab-var">Custo por unidade (R$)</label><input id="lab-var" type="number" min="0" step="0.5" value="5" inputmode="decimal"></div>
+            </div>
+          </div>
+          <div class="lab-result" id="lab-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SIMULADOR -->
+    <section class="section" id="simulador" data-present-title="Você é o gestor">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">04 · Simulador de gestão</span>
+          <h2 class="h2"><span class="grad" data-text="simTitle"></span></h2>
+          <p class="lead" data-text="simLead"></p>
+        </div>
+        <div class="sim glass reveal" id="sim"></div>
+      </div>
+    </section>
+
+    <!-- 6. PROJETOS -->
+    <section class="section" id="projetos" data-present-title="Projetos">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 · Laboratório de projetos</span>
+          <h2 class="h2" data-text="projetosTitle"></h2>
+          <p class="lead" data-text="projetosLead"></p>
+        </div>
+        <div class="filters" id="project-filters" role="group" aria-label="Filtrar projetos por categoria"></div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- 7. PALESTRAS -->
+    <section class="section" id="palestras" data-present-title="Palestras">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">06 · Central de palestras</span>
+          <h2 class="h2" data-text="palestrasTitle"></h2>
+          <p class="lead" data-text="palestrasLead"></p>
+        </div>
+        <div id="talks"></div>
+      </div>
+    </section>
+
+    <!-- 8. EXPERIÊNCIAS -->
+    <section class="section" id="experiencias" data-present-title="Experiências">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">07 · Experiências interativas</span>
+          <h2 class="h2" data-text="expTitle"></h2>
+          <p class="lead" data-text="expLead"></p>
+        </div>
+        <div class="exp-tabs reveal" role="tablist" aria-label="Experiências" id="exp-tabs">
+          <button class="exp-tab" role="tab" data-exp="quiz" aria-selected="true" aria-controls="exp-panel"><span class="icon-tile" data-icon="bulb"></span><span><b>Quiz de Administração</b><span>Teste seus conhecimentos</span></span></button>
+          <button class="exp-tab" role="tab" data-exp="desafio" aria-selected="false" aria-controls="exp-panel"><span class="icon-tile" data-icon="branch"></span><span><b>Desafio Empresarial</b><span>Qual é a melhor decisão?</span></span></button>
+          <button class="exp-tab" role="tab" data-exp="perfil" aria-selected="false" aria-controls="exp-panel"><span class="icon-tile" data-icon="star"></span><span><b>Descubra seu Perfil</b><span>Com qual área você combina?</span></span></button>
+        </div>
+        <div class="exp-panel glass reveal" id="exp-panel" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 9. MERCADO -->
+    <section class="section" id="mercado" data-present-title="Mercado de trabalho">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">08 · Mercado de trabalho</span>
+          <h2 class="h2" data-text="mercadoTitle"></h2>
+          <p class="lead" data-text="mercadoLead"></p>
+        </div>
+        <div class="careers" id="careers"></div>
+        <h3 class="sub-title">Continuidade dos estudos</h3>
+        <div class="studies" id="studies"></div>
+        <p class="note" id="mercado-note"></p>
+      </div>
+    </section>
+
+    <!-- INSCRIÇÃO -->
+    <section class="section signup" id="inscricao" data-present-title="Inscrição">
+      <div class="container">
+        <div class="signup-box reveal">
+          <span class="eyebrow">09 · Inscrição</span>
+          <h2 class="h2" data-text="inscricaoTitle"></h2>
+          <p class="lead" data-text="inscricaoText"></p>
+          <div class="signup-actions" id="signup-actions"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FORMULÁRIO -->
+    <section class="section" id="formulario" data-present-title="Formulário de interesse">
+      <div class="container">
+        <div class="form-cta reveal" id="form-cta">
+          <div>
+            <span class="eyebrow">10 · Formulário de interesse</span>
+            <h2 class="h2" data-text="formTitle"></h2>
+            <p class="lead" data-text="formText"></p>
+            <div id="form-actions"></div>
+          </div>
+          <div id="form-qr"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. SOBRE -->
+    <section class="section" id="sobre" data-present-title="Sobre o projeto">
+      <div class="divider-glow"></div>
+      <div class="container">
+        <div class="about">
+          <div class="about-text reveal">
+            <span class="eyebrow">11 · Sobre o projeto</span>
+            <h2 class="h2" data-text="sobreTitle"></h2>
+            <p class="lead" data-text="sobreText"></p>
+          </div>
+          <div class="info-list reveal reveal-d1" id="info-list"></div>
+        </div>
+        <h3 class="sub-title" data-text="galeriaTitle"></h3>
+        <div id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- 12. ENCERRAMENTO -->
+    <section class="closing" id="encerramento" data-present-title="Encerramento">
+      <svg class="closing-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+        <g stroke="rgba(192,132,252,.5)" fill="none">
+          <path d="M0 700 L600 380 L1200 700"/><path d="M0 600 L600 280 L1200 600" stroke-opacity=".6"/><path d="M0 500 L600 180 L1200 500" stroke-opacity=".3"/>
+        </g>
+      </svg>
+      <div class="container">
+        <h2 class="reveal"><span class="grad-text" data-text="closingTitle"></span></h2>
+        <p class="reveal reveal-d1" data-text="closingText"></p>
+        <div class="brand-big reveal reveal-d2" data-site="name"></div>
+        <div class="thanks reveal reveal-d2" data-text="closingThanks"></div>
+        <div class="hero-ctas reveal reveal-d3">
+          <a class="btn btn-primary" href="#inicio" id="back-top">VOLTAR AO INÍCIO</a>
+          <a class="btn btn-ghost" href="#formulario">ACESSAR O FORMULÁRIO</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year"></span> <span data-site="name"></span> · <span data-site="course"></span></span>
+      <span class="social" id="social"></span>
+      <a href="admin/index.html" rel="nofollow">Área administrativa</a>
+    </div>
+  </footer>
+
+  <!-- Modal genérico -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" type="button" data-close aria-label="Fechar"></button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- QR no telão -->
+  <div class="stage-qr" id="stage-qr" role="dialog" aria-modal="true" aria-label="QR Code do formulário em tela cheia">
+    <button class="btn btn-ghost btn-sm stage-close" type="button" id="stage-close">Fechar (Esc)</button>
+    <div class="stage-qr-inner">
+      <div>
+        <div class="eyebrow">Aponte a câmera do celular</div>
+        <h2 data-text="formTitle"></h2>
+        <p data-text="formText"></p>
+      </div>
+      <div class="qr-card" id="stage-qr-code"><i class="qr-corner tl"></i><i class="qr-corner tr"></i><i class="qr-corner bl"></i><i class="qr-corner br"></i></div>
+    </div>
+  </div>
+
+  <!-- Assistente NEX -->
+  <button class="nex-fab" id="nex-fab" type="button" aria-expanded="false" aria-controls="nex-panel"><span class="nex-orb"></span><b>NEX</b><span class="sr-only">Abrir assistente</span></button>
+  <div class="nex-panel" id="nex-panel" role="dialog" aria-label="Assistente NEX">
+    <div class="nex-head">
+      <span class="nex-orb"></span>
+      <div><b>NEX</b><small>Assistente do NEXT LEVEL</small></div>
+      <button type="button" id="nex-close" aria-label="Fechar assistente"></button>
+    </div>
+    <div class="nex-log" id="nex-log" aria-live="polite"></div>
+    <div class="nex-sugg" id="nex-sugg"></div>
+    <form class="nex-form" id="nex-form" autocomplete="off">
+      <label class="sr-only" for="nex-input">Pergunte ao NEX</label>
+      <input id="nex-input" type="text" placeholder="Pergunte algo..." maxlength="200">
+      <button type="submit" aria-label="Enviar"></button>
+    </form>
+  </div>
+
+  <!-- Barra do modo apresentação -->
+  <div class="present-hud" id="present-hud" role="toolbar" aria-label="Controles da apresentação">
+    <button type="button" data-present="prev" aria-label="Seção anterior"></button>
+    <span class="count" id="present-count"></span>
+    <button type="button" data-present="next" aria-label="Próxima seção"></button>
+    <button type="button" data-present="qr" title="QR Code no telão (Q)"></button>
+    <button type="button" data-present="full" title="Tela cheia (F)"></button>
+    <span class="present-help">← → navegar · F tela cheia · Q QR · Esc sair</span>
+    <button type="button" data-present="exit">Sair</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/defaults.js"></script>
+  <script src="data/content.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/qrcode.js"></script>
+  <script src="assets/js/experiences.js"></script>
+  <script src="assets/js/nex.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
